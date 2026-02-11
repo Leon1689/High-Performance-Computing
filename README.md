@@ -1,2 +1,2 @@
 # High-Performance-Computing
-Implementation of quantitative finance models (Black-Scholes, Greeks) and high-performance trading systems in C++ and Python
+Python vectorized programming and C++ low-latency systems training for Optiver/IMC technical interview preparation.
