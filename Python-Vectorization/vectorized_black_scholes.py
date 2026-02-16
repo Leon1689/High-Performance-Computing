@@ -3,6 +3,8 @@ from scipy.stats import norm
 
 def black_scholes_price(S, K, T, r, sigma, option_type='call'):
     """Basic Black-Scholes formula implementation."""
+    # Handling near-expiry cases to avoid division by zero
+    T = np.maximum(T, 1e-9)
     d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
     d2 = d1 - sigma * np.sqrt(T)
     
